@@ -1,0 +1,16 @@
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto;
+}
+
+.nav button:hover {
+    background-color: #ff6200;
+    color: rgb(33, 33, 33);
+    cursor: pointer;
+    transition: color 0.1s ease-in-out;
+    border: none;
+}
