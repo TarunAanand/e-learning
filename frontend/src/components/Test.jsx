@@ -69,8 +69,12 @@ const Test = () => {
     }
     
     return (
-        <div style={{ height: "60vh", width: "80vh", color: "black", margin: "auto" }}>
+        <div style={{ height: "60vh", width: "90vh", color: "black", margin: "auto" }}>
             <h1>Coding test</h1>
+            <div style={{overflow: "hidden",
+                borderRadius: "10px",
+                height: "100%",
+            }}>
             <Editor
                 height="100%"
                 defaultLanguage="c"
@@ -81,10 +85,15 @@ const Test = () => {
                     minimap: { enabled: false },
                     fontSize: 20,
                     automaticLayout: true,
-                    lineHeight: 40
+                    lineHeight: 40,
+                    padding: {
+                        top: 18,
+                    }
                 }}
             />
-            <button onClick={handleSubmit}>submit</button>
+            </div>
+            <button style={{margin: "2vh 70vh"}}
+            onClick={handleSubmit}>submit</button>
         </div>
     );
 };

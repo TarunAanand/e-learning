@@ -1,5 +1,5 @@
 import React from 'react'
-import './Pages.css'
+import '../styles/Pages.css'
 
 export const Page1 = () => {
     return (

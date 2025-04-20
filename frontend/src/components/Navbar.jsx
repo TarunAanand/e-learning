@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './navbar.css'
+import '../styles/navbar.css'
 
 const Navbar = ({}) => {
     const [currentPage, setCurrentPage] = useState(1);
