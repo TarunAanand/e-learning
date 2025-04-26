@@ -1,9 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, useNavigate, BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,  BrowserRouter } from "react-router-dom";
 import App from './App';
 import Hero from './Hero';
 import Test from './Test';
 import PrivateRoute from './PrivateRoute';
+import Os from './os/Os';
 
 export default function AppRoutes() {
     console.log("Approutes reached...")
@@ -17,6 +18,7 @@ export default function AppRoutes() {
                     </PrivateRoute>
                     } />
                 <Route path="/test" element={<Test />} />
+                <Route path="/courses/operating_systems" element={<Os />} />
             </Routes>
         </BrowserRouter>
     )

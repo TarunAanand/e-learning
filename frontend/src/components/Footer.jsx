@@ -19,7 +19,14 @@ const Footer = () => {
         },
         {
             name: 'Trishanth',
-            role: 'Maintainer and Collaborator',
+            role: 'Collaborator',
+            gitHub: 'https://github.com/trishanth', // Placeholder - update with actual link
+            linkedIn: 'https://www.linkedin.com/in/trishanth', // Placeholder - update with actual link
+            img: ""
+        },
+        {
+            name: 'Vijay M',
+            role: 'Collaborator',
             gitHub: 'https://github.com/trishanth', // Placeholder - update with actual link
             linkedIn: 'https://www.linkedin.com/in/trishanth', // Placeholder - update with actual link
             img: ""

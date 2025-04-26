@@ -30,6 +30,7 @@ body {
   margin-bottom: 40px;
   padding-bottom: 15px;
   border-bottom: 2px solid #e6d7b8;
+  
 }
 
 /* Section styles */
@@ -40,6 +41,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s, box-shadow 0.2s;
+
 }
 
 .learning-section:hover {
@@ -57,6 +59,7 @@ body {
   padding-left: 15px;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 /* Paragraphs */
@@ -111,21 +114,7 @@ strong {
   margin-top: 40px;
 }
 
-.nav-button {
-  background-color: #742f37;
-  color: #f8f3e2;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
 
-.nav-button:hover {
-  background-color: #5e262c;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

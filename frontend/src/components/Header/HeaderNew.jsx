@@ -34,20 +34,7 @@ function HeaderNew() {
                 <a href="/" className="logo">
                     KNOW
                 </a>
-                <nav className="nav">
-                    <a href="#" className="nav-link">
-                        Courses
-                    </a>
-                    <a href="#" className="nav-link">
-                        Resources
-                    </a>
-                    <a href="#" className="nav-link">
-                        Community
-                    </a>
-                    <a href="#" className="nav-link">
-                        About
-                    </a>
-                </nav>
+                
                 <div className="auth-buttons">
                     {
                         user ? (

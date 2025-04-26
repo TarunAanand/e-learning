@@ -4,8 +4,13 @@ import webDevImg from 'C:\\Users\\tarun\\Desktop\\projects\\e-learning\\frontend
 import osImg from 'C:\\Users\\tarun\\Desktop\\projects\\e-learning\\frontend\\src\\assets\\process-in-os.webp';
 import dataScienceImg from 'C:\\Users\\tarun\\Desktop\\projects\\e-learning\\frontend\\src\\assets\\data-science.jpg'
 import UIUX from 'C:\\Users\\tarun\\Desktop\\projects\\e-learning\\frontend\\src\\assets\\UI_vs_UX.jpg'
+import { useNavigate } from 'react-router-dom';
+
 
 function Courses() {
+    // <div className="courses-action">
+    //     <button className="btn btn-outline">View All Courses</button>
+    // </div>
     const courses = [
         {
             title: "Operating Systems",
@@ -36,6 +41,11 @@ function Courses() {
             image: UIUX
         },
     ]
+    const navigate = useNavigate();
+    
+    const handleCourses = () => {
+        navigate("/courses/operating_systems");
+    }
 
     return (
         <section className="courses">
@@ -46,7 +56,7 @@ function Courses() {
                     {courses.map((course, index) => (
                         <div className="course-card" key={index}>
                             <div className="course-image">
-                                <img src={course.image} alt='webdev-image'/>
+                                <img src={course.image} alt='webdev-image' />
                             </div>
                             <div className="course-content">
                                 <h3 className="course-title">{course.title}</h3>
@@ -55,14 +65,11 @@ function Courses() {
                                     <span className="course-info">
                                         {course.duration} • {course.level}
                                     </span>
-                                    <button className="course-btn">View Course →</button>
+                                    <button className="course-btn" onClick={handleCourses}>View Course →</button>
                                 </div>
                             </div>
                         </div>
                     ))}
-                </div>
-                <div className="courses-action">
-                    <button className="btn btn-outline">View All Courses</button>
                 </div>
             </div>
         </section>
